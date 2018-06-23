@@ -1,0 +1,9 @@
+In integrated development environment Android Studio implement an application for mobile platform Android.
+
+The application, which you have to implement is meant as a support for the agency for providing airline tickets. The application should allow for "buying" tickets to a desired destination (only several destinations are available, no more than 15) on a selected date for a given number of persons in a selected class (first, business, economy). You will have to enable user selection of a destination and a departure date, and in case of a return flight also the selection of a return date, and also selection of a desired class.
+
+In addition you will have to enable entering the number of passengers and their personal data. Since there might be several passengers it makes sense to implement passenger data entry using a special activity, which is called for each of the passengers. This activity enables entering first and last names, gender and date of birth. All entered data should be returned to the main activity after the passenger data entering activity closes.
+
+Using the data about the destination and the passengers the final price for the airline tickets should be calculated (come up with the basic price for one airline ticket yourself). When calculating price take into account that the tickets for the children younger as 2 years are for free, while tickets for the children up to 12 years old are at a half price.
+
+Enable also payment with credit card as a separate activity, where you transmit the calculated price into the activity, while in activity enable entering the first and last name of the card holder and the card number. If the data was successfully entered, the message informing user about the successful order should be display upon the return from the payment activity.

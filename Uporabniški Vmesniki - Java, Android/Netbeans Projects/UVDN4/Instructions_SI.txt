@@ -1,0 +1,67 @@
+Naloga zahteva analizo uporabnikov in njihovih nalog, načrtovanje ter implementacijo uporabniškega vmesnika aplikacije namenjene podpori delovanja izposojevalnice avtomobilov. Glede na spodnji dialog v grafičnem okolju Swing z integriranim razvojnim okoljem NetBeans realizirajte grafični vmesnik, ki bo zadoščal potrebam izposojevalnice avtomobilov. Uporabniški vmesnik naj prikaže tudi povzetek naročene izposoje, iz katerega so jasno razvidne podrobnosti posameznega naročila. Zaradi varovanja podatkov številko kreditne kartice prikažite v obliki "xxxx-xxxx-xxxx-0000" kjer so namesto ničel prave številke kreditne kartice, ostale številke pa so nadomeščene z x-i.
+
+Pri načrtovanju uporabniškega vmesnika upoštevajte principe (Nielsen-ovi principi) in navodila načrtovanja:
+
+    izbor gradnikov za interakcijo;
+    aranžiranje gradnikov;
+    izbor teksta in barv ter slik;
+    povratna informacija (obvestila, dialogi).
+
+Spodnji dialog naj vam služi tudi za analizo uporabnikov (osebe, ki sprejemajo naročilo izposoje) in analizo njihovih nalog (osnovni cilj vmesnika, individualne naloge vmesnika). Napotek: izdelajte najprej papirnati prototip.
+
+Oddanemu projektu priložite tekstovno datoteko, v katero napišite ter razložite in utemeljite: izbor posameznih gradnikov, aranžiranje gradnikov, izbor teksta, barv in slik, načrtovanje povratne informacije ter analizo uporabnikov in njihovih nalog.
+
+Dialog med naročnikom in osebo, zaposleno v izposojevalnici avtomobilov (uporabnik aplikacije):
+
+Pozdravljeni. Izposojevalnica avtomobilov Avtek. Želite?
+
+Dober dan, želel bi si izposoditi avtomobil.
+
+Kdaj pa potrebujete avtomobil?
+
+Potreboval bi ga od 5. junija od 8.00 zjutraj pa do 15. junija do 19.00 zvečer.
+
+Kje želite avtomobil prevzeti in kje oddati? Na voljo so vam naslednja mesta:
+Ljubljana, Maribor, Celje, Kranj, Velenje, Koper, Novo Mesto, Murska Sobota, Jesenice, Portorož, letališče Brnik in letališče Maribor.
+
+Avtomobil bi želel prevzeti na letališču Brnik, vrniti pa v Portorožu.
+
+Kakšen avtomobil si želite izposoditi? Majhen, srednji ali velik?
+
+Želel bi avto srednje velikosti. 
+
+Med avtomobili srednje velikosti lahko izbirate med: MB C180, Audi A5, Toyota Avensis, Honda Accord in Škoda Octavia.
+
+Želel bi Audi A5.
+
+S samodejnim ali ročnim menjalnikom?
+
+S samodejnim.
+
+Naj bo avtomobil z bencinskim ali dizelskim motorjem?
+
+Dizelski.
+
+Cena najema izbranega avtomobila je 100€ na dan. V vašem primeru to skupaj znese 1100€.
+
+Prav.
+
+Povejte prosim svoje podatke. Ime, priimek, naslov, e-mail, telefon, starost in koliko časa imate vozniški izpit.
+
+Pavel Škof, Podgrajska cesta 5, 2000 Maribor, pavel.skof@gmail.com, 041 111 111. Star sem 32 let, izpit pa imam že 14 let.
+
+Bi želeli skleniti dodatno avtomobilsko zavarovanje, to znese 2€ na dan?
+
+Da.
+
+Skupaj je torej 1122€. Kako in kdaj bi želeli plačati? Z gotovino ali s kartico?
+
+S kreditno kartico.
+
+Prosim povejte številko kreditne kartice in CCV kodo.
+
+xxxx-xxxx-xxxx-xxxx in ccv xxx
+
+Plačilo je sprejeto. Avto vas bo ob dogovorjenem terminu čakal v naši poslovalnici na letališču Brnik. Hvala za najem in srečno vožnjo.
+
+Hvala enako. Lep pozdrav.

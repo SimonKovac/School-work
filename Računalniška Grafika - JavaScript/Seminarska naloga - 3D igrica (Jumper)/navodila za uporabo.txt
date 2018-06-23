@@ -1,0 +1,2 @@
+Igra se zažene z zagonom page.html v brskalniku Mozila Firefox. Po koncu igre, lahko ponovno igramo s pritiskom na F5.
+Igralec premika kamero z miško, sebe pa z direkcijskimi tipkami na tipkovnici, s presledkom pa skače. Cilj igre je preskočiti čimveč kock.

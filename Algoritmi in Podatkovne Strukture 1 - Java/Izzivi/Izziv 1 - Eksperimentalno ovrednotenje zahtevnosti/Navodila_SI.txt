@@ -1,0 +1,51 @@
+Napišite program v programskem jeziku Java za empirično primerjavo dveh algoritmov za iskanje elementa v urejeni tabeli:
+
+    navadnega zaporednega iskanja in
+    dvojiškega iskanja.
+
+Oba algoritma poženite večkrat za različne velikosti tabele. Pri tem izmerite in izračunajte povprečni čas iskanja. Izpišite čase za oba algoritma. Predlagamo, da izziv rešujete postopoma po naslednjih točkah.
+a) Generiranje testnih primerov
+
+Za generiranje testnih primerov napišite metodo, ki vam za podani n vrne (urejeno) tabelo celih števil z vrednostmi od 1 do n. Npr.
+
+    int[] generateTable(int n)
+
+b) Implementacija obeh algoritmov iskanja elementa
+
+Napišite oba algoritma za iskanje elementa. Npr.
+
+    int findLinear(int[] a, int v)
+    int findBinary(int[] a, int l, int r, int v)
+
+Pri tem je a tabela elementov, v iskana vrednost, l leva meja v tabeli in r desna meja v tabeli. Kakšno vrednost imata l in r ob prvem klicu findBinary(...)?
+c) Izvedba enega testa za tabelo dolžine n
+
+Napišite metodi (za vsak način iskanja svojo metodo), ki izmerita povprečni čas iskanja v tabeli dolžine n. Npr.
+
+    long timeLinear(int n)
+    long timeBinary(int n)
+
+Vsaka izmed metod naj izvede naslednje:
+
+    Ustvari tabelo dolžine n z metodo, ki ste jo implementirali predhodno.
+    Začne meriti čas.
+    Nato 1000-krat ponovi naslednje
+        Ustvari naključno število med 1 in n.
+        Poišče število v tabeli.
+    Ustavi merjenje časa.
+    Izračuna povprečje.
+
+Čas izvajanja merite na sledeči način:
+
+long startTime = System.nanoTime();
+// iskanje elementa
+long executionTime = System.nanoTime() - startTime;
+d) Eksperimentalno ovrednotenje algoritmov
+
+Izvorno kodo te naloge oddaje na e-učilnico.
+
+Za vrednosti n∈[103,…,105] s korakom 103 tabelirajte povprečni čas izvajanja. Izpišite tabelo s tremi stolpci:
+
+    prvi stolpec naj vsebuje n,
+    drugi povprečni čas izvajanja navadnega iskanja,
+    tretji pa povprečni čas dvojiškega iskanja.

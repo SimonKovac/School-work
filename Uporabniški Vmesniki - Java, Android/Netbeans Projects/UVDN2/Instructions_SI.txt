@@ -1,0 +1,15 @@
+V okolju Swing in z generatorjem vmesnikov NetBeans realizirajte grafični uporabniški vmesnik, ki bo omogočal urejanje besedilne datoteke, izbiro barve besedila, iskanje po besedilu ter enostavno obdelavo najdenega besedila.
+
+Vmesnik naj temelji na glavnem oknu (JFrame) in naj vsebuje vrstični meni (JMenuBar) s končnimi izbirami Datoteka, Iskanje, Barve ter Pomoč, ki so kaskadni gumbi, katerim sledijo izvlečni meniji (JMenu). Meni Datoteka naj ima končne izbire Odpri, Shrani in Izhod. Prva povzroči klic dialoga za izbiro datoteke (JFileChooser) in prikaže vsebino datoteke v urejevalniku besedila. Druga shrani vsebino urejevalnika besedila v datoteko z novim poljubnim imenom.  Tretja končna izbira pa omogoča končanje programa.
+
+Meni Iskanje naj ima dve končni izbiri: Najdi vse in Papajščina. Prva poišče in z rumeno barvo obarva ozadje vseh pojavitev iskanega niza besedila, kurzor pa postavi na prvi znak prve pojavitve iskanega besedila. Izbira Papajščina pa v vseh pojavitvah iskanega niza vsakemu samoglasniku (a, e, i, o ali u) takoj za njim doda črko »p« in za črko »p« še predhodni samoglasnik. Prvemu samoglasniku v nizu pa vedno doda črki »p« in »a«. Primer: najdeni niz »Ljubljanica« spremeni v »Ljupabljapunipacapi«). Vse najdene tako obdelane nize prav tako obarva rumeno.
+
+Meni Barve naj ima končni izbiri Besedilo in Ozadje, ki omogočata nastavitev barve trenutno izbranega besedila ter nastavitev barve njegovega ozadja. Za izbiro barve uporabite dialog za izbiro barve (JColorChooser). Meni Pomoč naj ima končno izbiro Avtor, ki v polju za obvestila prikaže podatke o avtorju programa.
+
+Podčrtane črke v imenih izbir v menijih so mnemoniki, ki jih je prav tako potrebno realizirati.
+
+V delovno področje glavnega okna namestite vsebovalnik plošča (JPanel), ki bo vseboval besedilo z grafičnimi atributi (JTextPane) ter polje »Iskanje:« za vnos besedila (JTextField). Slednje bo služilo za vpis besedila, ki ga iščemo. Urejevalniku besedila dodajte tudi drsnike (JScrollPane), ki so pripeti na delovno področje urejevalnika.
+
+Na dnu okna dodajte enovrstično oznako (JLabel). Ob odpiranju datoteke naj se v njej izpišejo podatki o odprti datoteki (ime datoteke in velikost v bajtih). Med delovanjem programa pa naj se v tej oznaki izpisujejo obvestila o delovanju programa v uporabniku prijaznih stavkih. Tako uporabnika po uspešnem iskanju informiramo o iskanem besedilu in številu najdenih pojavitev. Uporabnika informirajmo o delovanju programa tudi ob drugih pomembnih dogodkih - npr. (ne)uspešno odpiranje ali shranjevanje datoteke, uspešno prevajanje v papajščino itd.
+
+V glavno okno dodajte tudi orodno vrstico (JToolBar), ki vsebuje gumbe (JButton) Odpri, Shrani, Najdi vse in Papajščina z enakim delovanjem kot istoimenske izbire v meniju. Vsi gumbi so ločeni z ločevalniki (JSeparator). Da lahko orodno vrstico poljubno prestavljate, morate v glavnem oknu uporabiti robno razvrščanje (BorderLayout).

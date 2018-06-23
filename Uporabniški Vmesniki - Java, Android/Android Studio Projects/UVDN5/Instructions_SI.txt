@@ -1,0 +1,11 @@
+V integriranem razvojnem okolju Android Studio realizirajte aplikacijo za mobilno platformo Android.
+
+Aplikacija, ki jo morate realizirati, je namenjena podpori delovanju agencije za posredovanje letalskih kart. Aplikacija naj omogoča "nakup" karte za želeno destinacijo (na voljo je le nekaj destinacij, ne več kot 15) na nek datum za poljubno število oseb in v izbranem razredu (prvi, poslovni, ekonomski). Tako boste morali uporabniku omogočiti izbiro destinacije in izbiro datuma odhod, v primeru da gre za povratno potovanje pa tudi datuma prihoda, ter tudi izbiro želenega razreda.
+
+Poleg tega pa boste morali omogočiti tudi vnos števila potnikov ter njihovih podatkov. Ker je lahko potnikov več, je smiselno realizirati vnos podatkov s posebno aktivnostjo, ki se kliče za vsakega potnika. V tej aktivnosti pa omogočite vnos imena, priimka, spola in datuma rojstva. Vneseni podatki naj se po končanju aktivnosti vrnejo v glavno aktivnost.
+
+Na podlagi vnesenih podatkov o destinaciji in o potnikih pa naj se nato izračuna tudi cena za letalske karte (osnovno ceno za eno letalsko karto do posamezne destinacije si izmislite sami). Pri izračunu predvidite, da so karte za otroke, ki so mlajši kot dve leti zastonj, karte za otroke do dvanajstega leta starosti pa so po polovični ceni.
+
+Omogočite tudi plačilo s kreditno kartico kot svojo aktivnost, kjer v aktivnost posredujete ceno, v aktivnosti pa omogočite vnos imena  in priimka lastnika kartice ter številko kreditne kartice. Če so bili podatki uspešno vneseni, naj se ob vrnitvi iz aktivnosti prikaže sporočilo, s katerim uporabnika obvestite, da je bilo naročilo uspešno izvedeno.
+
+

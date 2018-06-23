@@ -1,0 +1,61 @@
+﻿Uvod
+
+S pomočjo tehnologij HTML, CSS in JavaScript izdelajte spletno aplikacijo, ki se v celoti izvaja v brskalniku. Uporaba zunanjih knjižnic, z izjemo knjižnice jQuery, ni dovoljena.
+Zahteve
+
+Tematika aplikacije je lahko poljubna: od telefonskega imenika, galerije slik do preprostih iger; izbira je vaša. Edina omejitev je, da vaša aplikacija ni tipična aplikacija za beleženje opravil (angl. todo tasks) ali takšna, ki se od nje bistveno ne razlikuje. (Če ste v dvomu, postavite vprašanje v forum.)
+
+Glejte le, da boste aplikacijo v razpoložljivem času zmožni realizirati. Nekaj idej za aplikacije je podanih na koncu navodil.
+
+V aplikaciji morate implementirati naslednje funkcionalnosti.
+1 Zajem podatkov
+
+Uporabite ustrezne gradnike jezika HTML, s katerimi uporabnik vnaša podatke. Zajemu podatkov dodajte ustrezno preverjanje bodisi s pomočjo tehnologije JavaScript bodisi z atributi HTML.
+2 Manipulacija podatkov
+
+Nad zajetimi (in ostalimi, v kolikor je smiselno) podatki naj aplikacija izvaja različne operacije:
+
+    vstavljanje,
+    urejanje,
+    brisanje,
+    sortiranje,
+    poizvedbe (filtriranje, iskanje) itd.
+
+Implementirajte vsaj tri tovrstne operacije.
+
+Za primer, aplikacija, ki hrani seznam udeležencev pri predmetu Spletne tehnologije in ki smo jo implementirali v 3. tednu vaj, implementira 2 operaciji: vstavljanje in brisanje.
+3 Naprednejša HTML5 funkcionalnost
+
+Smiselno uporabite in implementirajte vsaj eno naprednejšo HTML5 funkcionalnost: local storage, web worker, geolocation, drag&drop, ...
+4 Odzivno oblikovanje
+
+Oblikovanje aplikacije naj bo prilagodljivo oz. odzivno (angl. responsive design).
+
+Implementirajte vsaj dve različni postavitvi: eno za mobilne naprave in eno za namizne računalnike. Pri tem uporabite mobile first strategijo.
+
+Bodite pozorni, da bo uporabniški vmesnik dovolj kompleksen, da boste lahko implementirali različne razporeditve in velikosti elementov.
+5 Ostale nefunkcionalne zahteve
+
+Poleg zahtev navedenih v točkah 1-4, morate pri izdelavi aplikacije upoštevati še naslednje zahteve.
+5.1 Organizacija kode
+
+Kodo za HTML, CSS in JavaScript shranite v ločene datoteke, nato pa z ustreznimi ukazi datoteke vključite v dokument HTML.
+5.2 Veljaven HTML
+
+Vsa napisana koda HTML mora prestati test z W3C validatorjem.
+5.3 Navajanje virov
+
+Naredite posebno podstran in na njej navedite vse vire, s katerimi ste si pomagali pri izdelavi naloge.
+
+Vsak delček kode, ki ga niste spisali sami, temveč ste ga našli na spletu in v nalogi uporabili, navedite kot vir in poleg v eni povedi pojasnite, pri čemer vam je pomagala. Vso oddano kodo morate znati v celoti razložiti in argumentirati.
+
+Glavni del aplikacije naj vsebuje povezavo na to podstran.
+Dodatek: Primeri aplikacij
+
+Spodaj so navedeni trije primeri aplikacij. Vaša je seveda lahko povsem drugačna.
+
+    Galerija slik, kjer lahko gledamo slike, spreminjamo vrstni red predstavitve slik, slikam dodajamo zvezdice, opise in po teh vrednostih iščemo itd. (Slike v galerijo dodamo ročno tj. preberemo jih iz datotečnega sistema.)
+    Imenik kontaktov s pripadajočimi funkcijami za dodajanje, iskanje, urejanje in izbris ipd.
+    Načrtovanje izleta s pomočjo zemljevida: uporaba Google maps za prikaz zemljevida in zanimivih točk s komentarji itd. V takem primeru je uporaba zunanje knjižnice za prikaz zemljevida sicer dovoljena.
+
+Vsa vprašanja v povezavi z izdelavo seminarske naloge zastavite v forum.

@@ -1,0 +1,17 @@
+
+h1, footer, div#table {text-align:center;}
+footer {background-color: blue;
+		padding:1em;}
+h1 {background-color:green;
+	padding:1em;
+	margin:0;}
+div#table {background-color: brown;}
+div#form {padding:1em;
+		  display:inline-block;
+		  text-align:left;}
+form {}
+div#form-wrapper {align-items:center;}
+tr#header {background-color:red;
+		   color:white;}
+td {border:1px solid black;}
+table{border-collapse:collapse;}

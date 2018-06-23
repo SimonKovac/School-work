@@ -1,0 +1,13 @@
+﻿Navodila za 3. domačo nalogo
+
+V okviru tretje domače naloge samostojno izdelajte spletno aplikacijo. Temo aplikacije izberite sami, pri čemer pa tema ne sme biti spletna trgovina oz. tema, ki se od spletne trgovine bistveno ne razlikuje.
+
+Aplikacija mora biti realizirana s tehnologijama PHP in MySQL, po potrebi pa so uporabljene tudi ostale tehnologije, ki so bile predstavljene na predavanjih in vajah (HTML, CSS, JavaScript, jQuery, AJAX in druge). Pri izdelavi si lahko pomagate z uporabo obstoječih knjižnic in ogrodij kot so Bootstrap, Symphony, Zend in podobno.
+
+Obseg aplikacije je poljuben, a pazite, da boste aplikacijo zmožni realizirati v podanem času. Vaša aplikacija naj minimalno vsebuje naslednje elemente:
+
+    Registracijo in prijavo uporabnikov: Aplikacija naj smiselno podpira tako anonimne (brez prijave) kot tudi prijavljene uporabnike tj. določene akcije (npr. ogled vsebine) lahko izvede vsak uporabnik, druge (npr. dodajanje in urejanje) pa le prijavljen. Prav tako poskrbite, da se bo v aplikacijo mogoče registrirati.
+    Preverjanje vhodnih podatkov: V aplikaciji skrbno preverjajte vnose, ki jih dobite od odjemalcev, in v primeru napačnih podatkov uporabnika ustrezno obvestite.
+    Uporaba podatkovne baze: Uporabite SUPB MySQL (ali MariaDB) z vsaj tremi tabelami. Tabele naj bodo v relaciji (tj. povezane), podatkovna baza pa naj bo normalizirana do tretje normalne oblike.
+    Urejen vmesnik: Uporabite razpoložljive tehnologije (CSS, JS, jQuery, AJAX) in oblikujte uporabniku prijazen vmesnik.
+    Ustrezna uporaba zahtevkov HTTP: Zahtevki, s katerimi dostopate do vaše aplikacije naj bodo skladni s priporočili standarda HTTP.

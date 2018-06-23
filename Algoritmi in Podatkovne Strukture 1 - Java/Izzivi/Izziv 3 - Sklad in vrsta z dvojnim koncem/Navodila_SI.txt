@@ -1,0 +1,66 @@
+Pri tem izzivu se boste pozabavali z osnovnimi podatkovnimi strukturami. S (statičnim) poljem boste implementirali sklad in vrsto z dvojnim koncem. Če se naloge lotite pametno, potem je dovolj sprogramirati le vrsto z dvojnim koncem.
+
+Na voljo so naslednji razred in vmesniki:
+
+class CollectionException extends Exception {
+    public CollectionException(String msg) {
+         super(msg);
+    }
+}
+
+
+interface Collection {
+    static final String ERR_MSG_EMPTY = "Collection is empty.";
+    static final String ERR_MSG_FULL = "Collection is full.";
+
+    boolean isEmpty();
+    boolean isFull();
+    int count();
+    String toString();
+}
+
+
+interface Stack<T> extends Collection {
+    T top() throws CollectionException;
+    void push(T x) throws CollectionException;
+    T pop() throws CollectionException;
+}
+
+
+interface Deque<T> extends Collection {
+    T front() throws CollectionException;
+    T back() throws CollectionException;
+    void enqueue(T x) throws CollectionException;
+    void enqueueFront(T x) throws CollectionException;
+    T dequeue() throws CollectionException;
+    T dequeueBack() throws CollectionException;
+}
+
+Pri tem je:
+
+    CollectionException - izjema, ki jo vrnete ob težavah (preliv oz. podliv sklada oz. vrste),
+    Collection - osnovni vmesnik za zbirko elementov,
+    Stack<T> - generični vmesnik (abstraktni podatkovni tip) za sklad,
+    Deque<T> - generični vmesnik za vrsto z dvojnim koncem.
+
+Stack<String> torej predstavlja sklad nizov in Deque<Double> vrsto števil v plavajoči vejici.
+
+Preden se lotiš programiranja, dobro poglej vmesnike: oba Stack<T> in Deque<T> razširjata Collection, prav tako večina metod lahko povzroči izjemo.
+Vrsta z dvojnim koncem
+
+S pomočjo polja implementiraj razred ArrayDeque<T>, ki podpira vrsto z dvojnim koncem in sklad. Njegova definicija naj bo naslednja:
+
+class ArrayDeque<T> implements Deque<T>, Stack<T> {
+    private static final int DEFAULT_CAPACITY = 64;
+
+    // Tukaj napiši svojo kodo.
+}
+
+a) Implementiraj vse potrebne metode.
+
+b) Metode naj v primeru težav vržejo izjemo CollectionException. V ta namen imate že definirani dve sporočili o napakah:
+
+    ERR_MSG_EMPTY - kadar pride do odstanjevanja ali povpraševanja po elementu v že prazni zbirki in
+    ERR_MSG_FULL - kadar pride do dodajanja elementa v že polno zbirko.
+
+c) Vse metode, ki odstranjujejo elemente, naj preprečujejo postopanje (angl. loitering).

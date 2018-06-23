@@ -1,0 +1,19 @@
+2. Domača naloga
+
+V okviru druge domače naloge realizirajte program za risanje kubičnih Bezierovih zlepkov v 2D prostoru [wiki]. Izris v programu naj bo definiran na običajnem HTML5 platnu (HTML5 canvas - NE WebGL). Program naj omogoča naslednje stvari:
+
+Risanje krivulj (2 točki):
+
+    Risanje posameznih vozlišč krivulje. Nova vozlišča na platno dodamo s klikom na ustrezno mesto. Vozlišča označite (krogci za aproksimirana vozlišča in kvadratki za interpolirana). Krivulja naj se izriše, ko je definiranih dovolj vozlišč.
+    Risanje povezanih krivulj iz zaporednih zlepkov. Pri tem pazite, da bodo posamezni zlepki gladko povezani (zveznost 1. stopnje C1).
+    Pri risanju krivulj pazite, da bodo izrisane dovolj, a ne preveč natančno. Ustrezno definirajte natančnost izrisa krivulj.
+
+Urejanje krivulj (2 točki):
+
+    Vsa vozlišča krivulj lahko naknadno premikamo. To realizirajte tako, da lahko uporabnik vozlišče zagrabi in premakne z miško.
+    Implementirajte možnost označevanja in brisanja zlepkov krivulj.
+
+Spreminjanje lastnosti krivulj (1 točka):
+
+    Program naj omogoča možnost risanja nove krivulje,
+    Program naj omogoča spreminjanje barve krivulj.

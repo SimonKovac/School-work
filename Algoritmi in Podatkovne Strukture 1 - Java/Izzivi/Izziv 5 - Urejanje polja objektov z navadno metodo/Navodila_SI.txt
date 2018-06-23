@@ -1,0 +1,30 @@
+Napišite program v javi, ki prikazuje urejanje polja objektov z navadno metodo za urejanje po izbranem atributu. Program naj:
+
+    ureja objekte tipa Oseba, ki predstavljajo osebe,
+    generira polje naključnih oseb (izbrane velikosti),
+    z metodo navadnega vstavljanja uredi zaporedje po poljubnem atributu naraščajoče ali padajoče,
+    ob urejanju izpisuje sled izvajanja ter
+    omogoči večkratno urejanje iz izpis zaporedja.
+
+Razred Oseba
+
+Razred Oseba vsebuje naslednje atribute: String priimek, String ime in int letoR . V razredu je še konstruktor, metoda za primerjanje in metoda za izpis.
+
+Konstruktor brez argumentov naj generira osebo z naključnimi podatki. V ta namen lahko uporabite statična polja z vnaprej pripravljenimi imeni in priimki. Leta rojstva naj bodo v smiselnem obsegu.
+
+Za primerjavo uporabite pristop, ki ga določa vmesnik Comparable:
+
+interface Comparable {
+  public int compareTo(Object o);
+}
+
+Metoda mora omogočati primerjavo po poljubnem atributu, za kar lahko izberete pristop z nastavljanjem statičnega atributa static int atr. Vrednost tega določi, po katerem izmed štirih atributov naj se izvede primerjava. Primerjava nizov naj bo po abecednem vrstnem redu, števil pa po vrednosti.
+
+Nastavljena izbira atr naj določa tudi atribut, ki ga izpisuje metoda toString().
+Urejanje
+
+Polje Person[] t urejamo po izbranem atributu z navadnim vstavljanjem:  straightInsertion(Comparable[] a)
+
+Pri tem naj velja, da lahko urejanje poteka naraščajoče ali padajoče. Za to lahko podobno kot pri izbiri atr uporabite statični atribut smer (oba je treba pred urejanjem nastaviti na pravo vrednost). Ob urejanju naj se po vsaki izvedbi notranje zanke izpisuje sled - v eni vrstici se izpišejo vsi elementi polja (vrednosti izbranega atributa) po vrsti.
+
+Metodo lahko tudi izboljšate tako, da uporabite bisekcijo pri iskanju mesta za vstavljanje elementa (dvojiško vstavljanje)

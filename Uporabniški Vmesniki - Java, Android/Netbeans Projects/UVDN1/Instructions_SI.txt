@@ -1,0 +1,22 @@
+Z integriranim razvojnim okoljem NetBeans realizirajte grafični vmesnik v grafičnem okolju Swing, ki temelji na glavnem oknu (JFrame). Glavno okno vsebuje naslednje komponente:
+
+    vrstični meni (JMenuBar) z možnostmi Datoteka, Izbire1, Izbire2 in Pomoč (ki so kaskadni gumbi, katerim sledijo izvlečni meniji (JMenu)),
+    orodno vrstico (JToolBar),
+    delovno področje glavnega okna (JPanel), ki vsebuje več podob, naštetih spodaj, in
+    statusno vrstico (JLabel).
+
+Delovno področje glavnega okna (JPanel) vsebuje naslednje podobe:
+
+    polje za vnos teksta (JTextField),
+    tri izključujoča stikala (JRadioButton)
+    ukazni gumb (JButton),
+    kombiniran izvlečni seznam (JComboBox),
+    krožno polje (JSpinner),
+    stikalo (JCheckBox) in
+    vrstico za sporočila (JLabel).
+
+Podčrtane črke v imenih možnosti so mnemoniki, ki jih morate tudi realizirati.
+
+Meni Datoteka naj vsebuje možnosti Odpri (klic dialoga za izbiro datoteke (JFileChooser)), Pobriši (pobriše vsebino vrstice za sporočila in statusne vrstice) in Izhod (konča program). Vsem opcijam menija Datoteka dodajte tudi ustrezne bližnjice (npr. Ctrl+O, Ctrl+C in Ctrl+Q). Meni Izbire1 naj vsebuje toliko končnih izbir, kot je črk v vašem imenu, pri tem pa naj bo i-ta končna izbira v tem meniju sestavljena iz imena tega menija (Izbire1) in i-te črke vašega imena. Primer: če je nekomu ime Janez, ima meni pet končnih izbir, prva končna izbira je "Izbire1 J", druga končna izbira je "Izbire1 A", tretja končna izbira je "Izbire1 N",četrta končna izbira je "Izbire1 E" in peta končna izbira je "Izbire1 Z", pri čemer so podčrtane črke v oznakah izbir spet mnemoniki. Podobno realizirajte tudi meni Izbire2, ki pa naj vsebuje toliko končnih izbir, kot je črk v vašem priimku, končne izbire pa naj bodo narejene tako kot pri meniju Izbire1, pri čemer uporabite ime tega menija (Izbire2) in j-to črko vašega priimka pri tvorjenju j-te končne izbire tega menija. Implementirajte tudi orodno vrstico (JToolBar), ki naj vsebuje vse končne izbire iz menijev Izbire1 in Izbire2 (npr. "Izbire1 J", "Izbire1 A", ...). Vmesnik naj vsebuje tudi statusno vrstico, ki naj bo oznaka (JLabel), v katero se naj ob izbiri možnosti iz menijev Izbire1 in Izbire2 (ali iz orodne vrstice) doda ustrezna črka na konec obstoječega teksta.
+
+V delovnem področju glavnega okna implementirajte polje za vnos teksta (JTextField), kombiniran izvlečni seznam (JComboBox), ki naj v eni od svojih končnih izbir vsebuje kraj vašega prebivališča, izključujoča stikala (JRadioButton) "Dodaj", "Odstrani prvega" in "Odstrani izbranega", ukazni gumb (JButton) "Izvedi izbrano akcijo", krožno polje (JSpinner), stikalo (JCheckBox) "Prepovej dvojnike" in vrstico za sporočila (JLabel). Ob pritisku na gumb "Izvedi izbrano akcijo" naj se izvede akcije glede na izbrano izključujoče stikalo. V primeru da je izbrano izključujoče stikalo "Dodaj", naj se vsebina polja za vnos teksta doda kot nov element v kombiniran izvlečni seznam če 1) polje za vnos teksta ni prazno in 2) če še ne obstaja zapis s tako vsebino v kombiniranem izvlečnem seznamu ali pa so dvojniki dovoljeni. Pritisk na gum "Izvedi izbrano akcijo" naj ob izbranem izključujočem stikalu "Odstrani prvega" oziroma "Odstrani izbranega" povzroči odstranitev prvega oziroma izbranega elementa iz kombiniranega izvlečnega seznama, če ta ni prazen. V vrstico za sporočila naj se izpisuje, katera operacija se trenutno izvaja, npr. "Dodajam", "Odstranjujem prvega", "Odstranjujem izbranega". S stikalom (JCheckBox) "Prepovej dvojnike" pa nadziramo dodajanje podvojenih elementov v kombiniran izvlečni seznam. Če je to stikalo izbrano, je dodajanje elementov, ki so že v seznamu, prepovedano, sicer pa je dovoljeno. Krožno polje naj hrani cela števila med 0 in 20. Ob spremembi izbrane vrednosti v krožnem polju naj se v vrstico za sporočila izpiše element iz kombiniranega izvlečnega seznama, ki se nahaja na izbranem položaju, oziroma "Ni elementa", če v seznamu ni toliko elementov. Za prikaz in grupiranje vseh teh komponent uporabite vsebovalnik plošča (JPanel).

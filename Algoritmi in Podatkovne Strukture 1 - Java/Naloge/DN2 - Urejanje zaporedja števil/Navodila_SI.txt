@@ -1,0 +1,52 @@
+
+Algoritmi za urejanje
+Napišite program v javi, ki prikazuje in meri urejanje zaporedja celih števil z različnimi metodami za urejanje, ki ste jih spoznali na predavanjih. Program naj:
+
+    ureja zaporedje (polje) celih števil, ki ga prebere s standardnega vhoda,
+    za urejanje uporablja 8 različnih metod za urejanje,
+    omogoča urejanje naraščajoče ali padajoče,
+    ob urejanju bodisi izpisuje ustrezno sled izvajanja ali
+    prešteje število premikov in primerjav za podano zaporedje.
+
+
+Zaporedje števil
+Števila se hranijo v ustreznem zaporedju, ki je izvedeno kot polje z možnostjo avtomatskega povečevanja (ang. resizable array). Naredite svojo rešitev, uporaba Collection Framework-a je prepovedana. Zaporedje elementov se napolni s podatki s standardnega vhoda, vsi podatki so zapisani v eni (dolgi) vrstici.
+Primer (vhod petih števil):
+
+  42 17 27 51 39 
+
+Argumenti programa
+
+Program dobi tri argumente v naslednjem zaporedju: način delovanja, način urejanja in smer urejanja. Način delovanja je lahko trace (izpis sledi) ali count (šteje operacij). Smer urejanja je lahko up (nepadajoče) in down (nenaraščajoče). Način urejanja pa je eden izmed naslednjih algoritmov urejanja (v različici, ki ste jo spoznali na predavanjih):
+
+    insert - navadno vstavljanje
+    select - navadno izbiranje
+    bubble - izboljšana navadna zamenjava (pregleduje le do mesta zadnje zamenjave)
+    heap - urejanje s kopico
+    merge - urejanje z zlivanjem
+    quick - hitro urejanje
+    radix - korensko urejanje
+    bucket - urejanje s koši, kjer je število košev k=n/2  (torej velja v=(max−min+1)/k , indeks koša elementa x je ix=(x−min)/v).
+
+Izpis sledi
+
+Prikaz delovanja posamezne metode izvedemo tako, da izpisujemo sled urejanja. To pomeni, da v eni vrstici izpišemo elemente zaporedja po vrsti, pri čemer s črto (|) označimo določene dele zaporedja. Prvi izpis naj bo neposredno pred izvajanjem urejanja (brez črt),nato pa naj si izpisi sledi sledijo:
+
+    pri navadnih metodah izpišemo celotno zaporedje na koncu vsake izvedbe vsake zunanje zanke, črta pa ločuje urejeni del zaporedja od neurejenega dela zaporedja,
+    pri urejanju s kopico najprej izpišemo zaporedje, ko zgradimo kopico, nato pa vsakič, ko kopico popravimo; črta deli kopico v začetnem delu zaporedja in zadnji urejeni del zaporedja.
+    pri urejanju z zlivanjem izpišemo del zaporedja, ki se trenutno ureja, črta pa deli levo in desno polovico pri zlivanju. Izpis se izvede ob delitvi na dva dela ter po zlivanju obeh delov.
+    pri hitrem urejanju izpišemo le del zaporedja, ki ga trenutno urejamo in sicer vedno neposredno po porazdelitvi. Črte označujejo mesta delitve zaporedja pri naslednjem rekurzivnem klicu. Na koncu se izpiše še urejeno zaporedje (brez črt).
+
+    pri korenskem urejanju izpišemo zaporedje po urejanju po vsakem mestu (enicah, deseticah, ...) brez vmesnih črt.
+
+    pri urejanju s koši izpišemo zaporedje po razporeditvi v n/2 košev (med posameznimi koši naj bo črta) ter nato pri urejanju z navadnim vstavljanjem (vseh košev naenkrat) po vsaki izvedbi zunanje zanke (črta ločuje urejeni in neurejeni del).
+
+Štetje premikov in primerjav
+
+Poleg sledenja mora program omogočati tudi štetje števila premikov (tj. prirejanj elementov, recimo metoda swap() izvede 3 premike) in števila primerjav elementov (v primeru zadnjih dveh metod štejemo k primerjavam tudi število določanj mesta elementa v tabeli števcev c - recimo število klicev metode getDigit(), če je to izvedeno z metodo).  V ta namen je treba v program vgraditi ustrezne števce. Sprožitev tega načina delovanja je enaka kot v primeru sledenja, le ukaz je count. Pri tem se izpišejo vrednosti števila premikov in primerjav za tri zaporedne izvedbe urejanja z izbrano metodo in sicer:
+
+    za urejanje podanega zaporedja v izbrani smeri,
+    za urejanje že urejenega zaporedja v izbrani smeri in
+    za urejanje že urejenega zaporedja v obratni smeri. 
+
+ Vse vrednosti so zapisane ena za drugo ločene s presledkom.

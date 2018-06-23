@@ -1,0 +1,69 @@
+Navodila
+Napišite program v javi, ki prikazuje izvedbo več preprostih algoritmov nad grafi, ki ste jih spoznali na predavanjih in vajah. 
+Algoritmi ustrezno (različno) delujejo tako nad usmerjenimi (ang. directed) kot neusmerjenimi (ang. undirected) grafi. 
+Za podani graf mora biti mogoče izvesti naslednje:
+
+    izpisati značilnosti grafa,
+    določiti število različnih sprehodov določene dolžine med vsemi vozlišči,
+    izpisati vstopni in izstopni vrstni red obiska vozlišč pri izvedbi obhoda v globino (dfs),
+    izpisati vrstni red obiska vozlišč pri izvedbi obhoda v širino (bfs),
+    določiti in izpisati najkrajše poti od izbranega vozlišča do vseh ostalih ter
+    določiti in izpisati množice (krepko) povezanih komponent.  
+
+Pri izvedbi algoritmov naj velja načelo, da v primeru poljubne izbire vozlišč vedno izberemo vozlišče z manjšo oznako.
+
+Opis grafa
+Opis grafa prebere program s standardnega vhoda. V prvi vrstici je podano število vozlišč, v vseh naslednjih pa s pari (i,j) povezave med vozlišči. 
+Vozlišča so označena z indeksi od 0 dalje. Pri neusmerjenem grafu zadošča, da je povezava določena le enkrat - (i,j) ali (j,i).
+
+Argumenti programa
+
+Program dobi dva ali tri argumente, pri čemer prvi opiše vrsto grafa, drugi akcijo in tretji parameter akcije, če ga ta potrebuje. 
+
+Vrsta grafa je lahko directed (usmerjen graf) ali undirected (neusmerjen graf). Akcije oz. algoritmi so:
+
+    info - značilnosti grafa
+    walks k - število sprehodov dolžine k 
+    dfs - obhod v globino
+    bfs - obhod v širino
+    sp i - najkrajše poti iz izhodišča i
+    comp - krepko povezane komponente.
+
+Izpis značilnosti grafa
+
+Ukaz info izpiše naslednje značilnosti grafa: v prvi vrstici število vozlišč, število povezav in število manjkajočih povezav do klike, 
+
+nato pa v primeru usmerjenega grafa za vsako vozlišče njegov indeks i, vhodno in izhodno stopnjo vozlišča, 
+
+v primeru neusmerjenega grafa pa indeks i in stopnjo vozlišča. 
+
+Število sprehodov določene dolžine med vsemi vozlišči
+
+Ukaz walks določi in izpiše matriko, ki predstavlja število sprehodov dolžine k med vsemi vozlišči (usmerjenega ali neusmerjenega) grafa.
+
+Obhod grafa v globino
+
+Ukaz dfs izvede nad (usmerjenim ali neusmerjenim) grafom obhod v globino. Pri tem začne z vozliščem 0 in poskrbi za obisk vseh vozlišč. 
+
+V prvi vrstici izpiše vstopni vrstni red in v drugi izstopni vrstni red obhoda.
+
+Obhod grafa v širino 
+
+Ukaz bfs izvede nad (usmerjenim ali neusmerjenim) grafom obhod v širino, pri čemer začne z vozliščem 0 in poskrbi za obisk vseh vozlišč. Izpiše vrstni red obhoda. 
+
+Namig: uporabiti morate ustrezno podatkovno strukturo, ki jo morate implementirati sami.
+
+Najkrajše poti od izbranega vozlišča do vseh ostalih
+
+Ukaz sp določi dolžine najkrajše poti od izbranega vozlišča do vseh vozlišč (usmerjenega ali neusmerjenega) grafa.
+
+ Pri tem za vsako vozlišče izpiše indeks i in dolžino poti. Pri izbranem vozlišču je oddaljenost enaka 0, za nedosegljiva vozlišča pa se izpiše vrednost -1.
+
+
+Povezane komponente
+
+Ukaz comp določi povezane komponente v primeru neusmerjenga grafa oz. krepko povezane komponente v primeru usmerjenega grafa
+
+ in jih izpiše (urejene po indeksih) vsako v svojo vrstico, pri čemer so tudi vrstice urejene po indeksu prvega vozlišča. 
+
+Čeprav je izpis v primeru usmerjenega in neusmerjenega grafa enak, je treba uporabiti različne algoritme.

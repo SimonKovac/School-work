@@ -1,0 +1,14 @@
+3. Domača naloga 
+
+V JavaScriptu in HTML5 realizirajte vizualizacijo detekcije trkov med naključno premikajočimi krogi v 2D prostru, kjer se prostor deli s QuadTree drevesom (QuadTree). V vsakem končnem podprostoru izvedete preverjanje trkov, med elementi podprostora.
+
+Vizualizacija naj deluje podobno kot v spodnjem videu. ( https://www.youtube.com/watch?v=TJzq_kjtGTc )
+
+Program naj vsebuje naslednje stvari:
+
+    žogice naj se gibajo v omejenem kvadratu, kjer se od sten odbijajo,
+    ko detektiramo trk med žogicami naj se le-te obarvajo (realizacija odboja ni potrebna),
+    uporabnik naj ima možnost vklopa razdelilne mreže prostora,
+    uporabnik naj ima možnost določiti število "žogic",
+    program naj bo raliziran z uporabo HTML 2D platna,
+    ne uporabljajte knjižnic.

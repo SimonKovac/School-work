@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<title>Generic phonebook</title>
+
+<div class="row">
+
+    <header class="col-12">
+        <div id="logo">Generic phonebook</div>
+    </header>
+
+</div>
+
+<div class="row">
+
+    <div id="menu" class="col-2">
+        <button id="showcreate">New entry</button>
+        <div id="createform">
+            <fieldset id="addfield">
+                <label for="cname">Name:</label>
+                <input id="cname" type="text" />
+                <div id="cnameerror" class="error"></div>
+                <label for="cnumber">Number:</label>
+                <input id="cnumber" type="text" />
+                <div id="cnumbererror" class="error"></div>
+                <label for="caddress">Address:</label>
+                <input id="caddress" type="text" />
+                <div id="caddresserror" class="error"></div>
+                <label for="cemail">Email:</label>
+                <input id="cemail" type="text" />
+                <div id="cemailerror" class="error"></div>
+                <button id="createsubmit">Submit</button>
+                <button id="createcancel">Cancel</button>
+            </fieldset>
+        </div>
+        <button id="showedit">Edit entry</button>
+        <div id="editform">
+            <fieldset id="editfield">
+                <label for="ename">Name:</label>
+                <select id="ename"></select>
+                <label for="enumber">Number:</label>
+                <input id="enumber" type="text" />
+                <div id="enumbererror" class="error"></div>
+                <label for="eaddress">Address:</label>
+                <input id="eaddress" type="text" />
+                <div id="eaddresserror" class="error"></div>
+                <label for="eemail">Email:</label>
+                <input id="eemail" type="text" />
+                <div id="eemailerror" class="error"></div>
+                <button id="editsubmit">Confirm</button>
+                <button id="editcancel">Cancel</button>
+            </fieldset>
+        </div>
+    </div>
+
+    <div id="content" class="col-10">
+        <table id="contacttable">
+        </table>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <footer class="col-12">
+        (c) Simon Kovač - Spletne tehnologije 2017/18 - <a href="https://ucilnica.fri.uni-lj.si/mod/assign/view.php?id=20875">Naloga</a>
+    </footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
